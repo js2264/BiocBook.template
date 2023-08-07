@@ -24,7 +24,7 @@ book:
   page-footer:
     background: light
     left: |
-      This book was built with <a href="https://github.com/js2264/BiocBook/">BiocBook</a> with ❤️
+      This book was built with <a href="https://github.com/js2264/BiocBook/">BiocBook</a> with :heart:
   repo-branch: devel
   repo-actions: [edit, issue]
   open-graph: true
@@ -53,6 +53,7 @@ format:
     editor: visual
     citation-location: margin
     bibliography: inst/assets/bibliography.bib
+    from: markdown+emoji
 
 ## --- knitr options
 
