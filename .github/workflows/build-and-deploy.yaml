@@ -1,4 +1,4 @@
-name: biocbook.template
+name: <package_name>
 
 on:
   push:
