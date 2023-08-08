@@ -30,14 +30,14 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: ${{ github.repository_owner }}
+          username: ${{ <github_user> }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🏷 Get metadata for Docker
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/${{ github.repository_owner }}/${{ github.workflow }}
+          images: ghcr.io/${{ <github_user> }}/${{ github.workflow }}
           tags: |
             type=raw,value=${{ env.pkgversion}},enable=true
             type=raw,value=${{ github.ref_name }},enable=true
@@ -58,7 +58,7 @@ jobs:
     needs: build-push
     runs-on: ubuntu-latest
     name: Render and publish book [${{ github.ref_name }}]
-    container: ghcr.io/${{ github.repository_owner }}/${{ github.workflow }}:${{ github.ref_name }}
+    container: ghcr.io/${{ <github_user> }}/${{ github.workflow }}:${{ github.ref_name }}
     permissions:
       contents: write
       packages: read
