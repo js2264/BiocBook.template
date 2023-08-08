@@ -1,0 +1,14 @@
+format: 
+  html:
+    grid:
+      sidebar-width: 500px
+      body-width: 1100px
+    theme: 
+      - cosmo
+      - inst/assets/book.scss
+    highlight-style: atom-one
+    code-link: true
+    editor: visual
+    citation-location: margin
+    bibliography: inst/assets/bibliography.bib
+    from: markdown+emoji

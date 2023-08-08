@@ -14,6 +14,4 @@ book:
             url:  https://<github_user>.github.io/<Package_name>/devel/
     style: "docked"
     background: "light"
-    border: true
-    search: true
     collapse-level: 5

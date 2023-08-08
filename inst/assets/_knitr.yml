@@ -1,0 +1,7 @@
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "## " 
+    cache: false
+    fig.align: "center"
+    python.reticulate: false
