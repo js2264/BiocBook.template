@@ -1,45 +1,13 @@
-## --- Book-specific options
-
-book:
-  title: "<Package_name>"
-  chapters:
-    - index.qmd
-  cover-image: inst/assets/cover.png
-  favicon: inst/assets/favicon.png
-  sidebar: 
-    tools:
-      - icon: git
-        menu:
-          - text: Source Code
-            url:  https://github.com/<github_user>/<Package_name>/
-          - text: Browse version `devel`
-            url:  https://<github_user>.github.io/<Package_name>/devel/
-    style: "docked"
-    background: "light"
-    border: true
-    search: true
-    collapse-level: 5
-  search: 
-    location: sidebar
-  page-footer:
-    background: light
-    left: |
-      This book was built with <a href="https://github.com/js2264/BiocBook/">BiocBook</a> with :heart:
-  repo-branch: devel
-  repo-actions: [edit, issue]
-  open-graph: true
-
-website:
-  back-to-top-navigation: true
-
 ## --- Project-wide settings
-
 project:
   type: book
   output-dir: docs
 
-## --- Format options
+metadata-files:
+  - inst/assets/_book.yml
+  - inst/assets/_website.yml
 
+## --- Format options
 format: 
   html:
     grid:
@@ -56,7 +24,6 @@ format:
     from: markdown+emoji
 
 ## --- knitr options
-
 knitr:
   opts_chunk: 
     collapse: true

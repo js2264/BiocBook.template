@@ -1,0 +1,19 @@
+book:
+  title: "<Package_name>"
+  chapters:
+    - index.qmd
+  cover-image: inst/assets/cover.png
+  favicon: inst/assets/favicon.png
+  sidebar: 
+    tools:
+      - icon: git
+        menu:
+          - text: Source Code
+            url:  https://github.com/<github_user>/<Package_name>/
+          - text: Browse version `devel`
+            url:  https://<github_user>.github.io/<Package_name>/devel/
+    style: "docked"
+    background: "light"
+    border: true
+    search: true
+    collapse-level: 5
