@@ -4,8 +4,8 @@ book:
   title: "<Package_name>"
   chapters:
     - index.qmd
-  cover-image: inst/assets/BiocBook.png
-  favicon: inst/assets/bioc.png
+  cover-image: inst/assets/cover.png
+  favicon: inst/assets/favicon.png
   sidebar: 
     tools:
       - icon: git
