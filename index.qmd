@@ -17,8 +17,9 @@ intro <- glue::glue(
     "**BioC version:** <b style='color:red;'>{BiocManager::version()}</b><br/>\n", 
     "**License:** {license}<br/>"
 )
-intro
 ```
+
+`r intro`
 
 This is the landing page of the `BiocBook` entitled *...*.  
 
