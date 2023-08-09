@@ -13,8 +13,8 @@ intro <- glue::glue(
     "**Authors:** {paste(format(authors, include = c('given', 'family', 'role')), collapse = ', ')}<br/>\n", 
     "**Compiled:** {as.character(Sys.Date())}<br/>\n", 
     "**Package version:** {version}<br/>\n", 
-    "**R version:** {R.version.string}<br/>\n", 
-    "**BioC version:** {BiocManager::version()}<br/>\n", 
+    "**R version:** <b style='color:red;'>{R.version.string}</b><br/>\n", 
+    "**BioC version:** <b style='color:red;'>{BiocManager::version()}</b><br/>\n", 
     "**License:** {license}<br/>"
 )
 intro
@@ -59,31 +59,18 @@ docker run \
 The initiated RStudio Server instance will be available at 
 [https://localhost:8787](https://localhost:8787).
 
-# Reproducibility {-}
-
-This `BiocBook` has been written using the 
-[`BiocBook` package](https://github.com/js2264/BiocBook) (@serizay2023), 
-and also relies on other packages, including (but not only): 
-
-- `quarto` (@Allaire_Quarto_2022)
-- `devtools` (@Wickham2022)
-- `rebook` (@lun2023)
-
-To build this book locally, you can run: 
-
-```{sh "reproducibility", filename="bash"}
-#| eval: false
-git clone git@github.com:<github_user>/<Package_name>.git && cd <github_user>/<Package_name>
-Rscript -e 'remotes::install_local(".", force = TRUE)'
-quarto render
-```
-
 # Session info {-}
 
-```{r "session info", filename="R"}
+::: {.callout-note collapse="true"}
+
+## Click to expand 👇
+
+```{r "session info"}
 #| cache: false
 sessioninfo::session_info(
     installed.packages()[,"Package"], 
     include_base = TRUE
 )
 ```
+
+:::
