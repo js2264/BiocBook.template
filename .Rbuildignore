@@ -6,3 +6,4 @@
 ^Dockerfile$
 ^_quarto\.yml$
 ^index\.qmd$
+^requirements\.txt$
