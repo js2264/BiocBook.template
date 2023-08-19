@@ -3,7 +3,12 @@
 ```{r "intro"}
 #| echo: false
 .gh_url <- file.path('https://github.com', rmarkdown::metadata[['github-repo']])
-pkglines <- read.dcf("DESCRIPTION")
+if (file.exists("DESCRIPTION")) {
+    description_path <- "DESCRIPTION"
+} else {
+    description_path <- "../DESCRIPTION"
+}
+pkglines <- read.dcf("../DESCRIPTION")
 pkg <- pkglines[, "Package"][[1]]
 version <- pkglines[, "Version"][[1]]
 authors <- eval(parse(text = pkglines[, "Authors@R"]))

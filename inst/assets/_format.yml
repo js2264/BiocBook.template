@@ -5,10 +5,10 @@ format:
       body-width: 1100px
     theme: 
       - cosmo
-      - inst/assets/book.scss
+      - assets/book.scss
     highlight-style: atom-one
     code-link: true
     editor: visual
     citation-location: margin
-    bibliography: inst/assets/bibliography.bib
+    bibliography: assets/bibliography.bib
     from: markdown+emoji
