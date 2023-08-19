@@ -1,3 +1,5 @@
+^\.quarto$
+^docs$
 ^\.github$
 ^LICENSE\.md$
 ^NOTES\.md$

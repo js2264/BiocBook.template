@@ -16,8 +16,10 @@ Depends:
     BiocBook
 Imports:
 Suggests:
+    BiocManager, 
+    BiocVersion, 
+    BiocStyle, 
     glue,
-    rebook,
     sessioninfo, 
     knitr, 
     quarto

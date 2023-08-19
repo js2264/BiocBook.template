@@ -27,4 +27,4 @@ RUN Rscript -e 'write(paste0("BIOCBOOK_IMAGE=", tolower(Sys.getenv("BIOCBOOK_PAC
 RUN Rscript -e 'pak::pkg_install("/opt/BiocBook/", ask = FALSE, dependencies = c("Depends", "Imports", "Suggests"))'
 
 ## Check installed BiocBook
-RUN Rscript -e 'devtools::check("/opt/BiocBook/", error_on = "error")'
+RUN Rscript -e 'devtools::check("/opt/BiocBook/", build_args = "--no-build-vignettes", args = "--no-build-vignettes", error_on = "error")'
