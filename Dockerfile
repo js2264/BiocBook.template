@@ -10,7 +10,7 @@ RUN /root/.local/bin/micromamba clean --yes --quiet
 RUN /root/.local/bin/micromamba shell init --shell bash --root-prefix=~/micromamba
 
 ## Install Quarto
-RUN apt-get update && apt-get install gdebi-core -y
+RUN apt-get update && apt-get install rsync gdebi-core -y
 RUN curl -LO https://quarto.org/download/latest/quarto-linux-amd64.deb 
 RUN gdebi --non-interactive quarto-linux-amd64.deb
 RUN rm quarto-linux-amd64.deb

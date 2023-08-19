@@ -76,10 +76,6 @@ jobs:
           sessioninfo::session_info(pkgs, include_base = TRUE)
         shell: Rscript {0}
 
-      - name: 📚 Install rsync
-        run: |
-          apt-get update && apt-get install -y rsync
-
       - name: 🔧 Install quarto dependencies    
         run: |
           quarto install tinytex
