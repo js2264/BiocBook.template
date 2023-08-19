@@ -5,7 +5,7 @@ COPY . /opt/BiocBook
 
 ## Install micromamba and required softwares
 RUN curl -L micro.mamba.pm/install.sh | bash
-RUN /root/.local/bin/micromamba create --file /opt/BiocBook/requirements.yml --yes
+RUN /root/.local/bin/micromamba create --file /opt/BiocBook/inst/requirements.yml --yes
 RUN /root/.local/bin/micromamba clean --yes --quiet
 RUN /root/.local/bin/micromamba shell init --shell bash --root-prefix=~/micromamba
 
