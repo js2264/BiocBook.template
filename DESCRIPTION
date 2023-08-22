@@ -19,6 +19,8 @@ Suggests:
     BiocManager, 
     BiocVersion, 
     BiocStyle, 
+    BiocCheck, 
+    rcmdcheck, 
     glue,
     sessioninfo, 
     knitr, 
