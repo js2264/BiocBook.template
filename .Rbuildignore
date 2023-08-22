@@ -1,3 +1,5 @@
+^inst/\.quarto$
+^\.png$
 ^\.quarto$
 ^docs$
 ^\.github$
