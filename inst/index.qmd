@@ -1,5 +1,3 @@
-# Welcome {-}
-
 ```{r "intro"}
 #| echo: false
 intro <- tryCatch(
@@ -24,6 +22,8 @@ intro <- tryCatch(
 ```
 
 `r intro`
+
+# Welcome {-}
 
 This is the landing page of the `BiocBook` entitled *...*.  
 
