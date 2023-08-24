@@ -6,6 +6,16 @@ $primary: #008CBA !default;
 
 code { color: #008CBA; }
 
+/* Cover image ------------------------------------------ */
+
+.quarto-cover-image {
+  max-width: 250px;
+  float: right;
+  margin-left: 30px;
+  margin-top: -30px;
+  margin-right: 10%;
+}
+
 /* Left navbar ------------------------------------------ */
 
 div.sidebar-item-container .active, div.sidebar-item-container .show>.nav-link, div.sidebar-item-container .sidebar-link>code {
