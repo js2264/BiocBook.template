@@ -64,6 +64,7 @@ docker run \
 The initiated RStudio Server instance will be available at 
 [https://localhost:8787](https://localhost:8787).
 
+<!-- 
 # System dependencies and conda 
 
 A pre-configured `micromamba` environment called `BiocBook` is available 
@@ -74,7 +75,8 @@ once the Docker image is loaded. It provides all the softwares listed in
 #| eval: false
 docker run -it ghcr.io/<github_user>/<package_name>:devel bash
 micromamba activate BiocBook
-```
+``` 
+-->
 
 # Session info {-}
 
