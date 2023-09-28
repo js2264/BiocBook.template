@@ -6,6 +6,7 @@ format:
     theme: 
       - cosmo
       - assets/book.scss
+    mainfont: "Atkinson Hyperlegible, sans-serif"
     highlight-style: atom-one
     code-link: true
     editor: visual
