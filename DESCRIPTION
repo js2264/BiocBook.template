@@ -4,7 +4,7 @@ Description:
     This sentence is a placeholder. It should be changed by the author of 
     the package to describe the purpose of this BiocBook. 
     It should be at least 3 sentences otherwise `BiocCheck` will complain.
-Version: 0.99.0
+Version: 0.98.0
 Date: `r date()`
 Authors@R: 
     person(
@@ -15,27 +15,17 @@ Authors@R:
 URL: https://github.com/<github_user>/<Package_name>
 BugReports: https://github.com/<github_user>/<Package_name>
 Depends:
-    R (>= 4.3), 
-    BiocBook
+    R (>= 4.3)
 Imports:
 Suggests:
     BiocManager, 
     BiocVersion, 
     BiocStyle, 
-    BiocCheck, 
-    rcmdcheck, 
     glue,
-    sessioninfo, 
-    knitr, 
-    quarto
-Remotes:
-    github::js2264/BiocBook
+    sessioninfo,
+    knitr 
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
-biocViews: 
-	Infrastructure, 
-    ReportWriting, 
-    Software
+BiocType: Book
 License: MIT + file LICENSE
 VignetteBuilder: knitr
