@@ -10,6 +10,6 @@ format:
     highlight-style: atom-one
     code-link: true
     editor: visual
-    citation-location: margin
     bibliography: assets/bibliography.bib
     from: markdown+emoji
+  pdf: default
