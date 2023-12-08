@@ -29,5 +29,5 @@ Roxygen: list(markdown = TRUE)
 BiocType: Book
 License: MIT + file LICENSE
 VignetteBuilder: knitr
-BiocBookTemplate: 1.0.5
+BiocBookTemplate: 1.0.6
 SystemRequirements: quarto
