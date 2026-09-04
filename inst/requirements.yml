@@ -1,8 +1,21 @@
-name: 
+## The conda environment this book's python chunks run in, created at build
+## time by BiocBook::setup_python().
+##
+## Pin what you depend on: the book is rebuilt regularly, and an unpinned
+## dependency means the rendered book can change under you without a single
+## commit.
+##
+## `nodefaults` keeps the Anaconda `defaults` channel out. It is covered by the
+## Anaconda Terms of Service, which require a paid licence for many
+## organisations; conda-forge and bioconda are not.
+name:
     BiocBook
 channels:
     - bioconda
     - conda-forge
-    - defaults
+    - nodefaults
 dependencies:
-    - python>=3.6
+    - python=3.12
+    ## add the python packages your book imports, pinned, e.g.:
+    # - numpy=1.26
+    # - matplotlib=3.8

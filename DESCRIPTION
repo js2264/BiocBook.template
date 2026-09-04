@@ -18,9 +18,11 @@ Depends:
     R (>= 4.3)
 Imports:
 Suggests:
+    BiocBook, 
     BiocManager, 
     BiocVersion, 
     BiocStyle, 
+    reticulate,
     glue,
     sessioninfo,
     knitr 
@@ -29,5 +31,5 @@ Roxygen: list(markdown = TRUE)
 BiocType: Book
 License: MIT + file LICENSE
 VignetteBuilder: knitr
-BiocBookTemplate: 1.0.6
+BiocBookTemplate: 1.1.0
 SystemRequirements: quarto

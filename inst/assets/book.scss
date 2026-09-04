@@ -82,9 +82,30 @@ pre.sourceCode.r, code.sourceCode.r {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     z-index: -1;
-    margin: -$border; /* !importanté */
-    border-radius: inherit; /* !importanté */
+    margin: -$border; /* !important */
+    border-radius: inherit; /* !important */
     background: linear-gradient(to right, #18a603, #0484a9, #0087af);
+  }
+
+}
+
+pre.sourceCode.python, code.sourceCode.python {
+  
+  $border: 2px;
+  color: #070707;
+  background: #FFF;
+  background-clip: padding-box; /* !important */
+  border: solid $border transparent; /* !important */
+  border-radius: 8px;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -$border; /* !important */
+    border-radius: inherit; /* !important */
+    background: linear-gradient(to left, #106703, #07708e, #013c4e);
   }
 
 }

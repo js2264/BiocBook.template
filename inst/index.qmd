@@ -64,19 +64,31 @@ docker run \
 The initiated RStudio Server instance will be available at 
 [https://localhost:8787](https://localhost:8787).
 
-<!-- 
-# System dependencies and conda 
+# `python` support {-}
 
-A pre-configured `micromamba` environment called `BiocBook` is available 
-once the Docker image is loaded. It provides all the softwares listed in 
-`requirements.yml`. 
+The `Docker` image ships a `conda` environment called `BiocBook`, holding
+everything listed in `inst/requirements.yml`. It is created at build time by
+`BiocBook::setup_python()`, which fetches a pinned `micromamba` if the machine
+has no `conda` at all.
 
-```{sh "micromamba", filename="bash"}
+`reticulate` picks it up automatically, so `python` just works in any `R`
+session started from the image:
+
+```{sh "python-env", filename="bash"}
 #| eval: false
-docker run -it ghcr.io/<github_user>/<package_name>:devel bash
-micromamba activate BiocBook
-``` 
--->
+docker run -it ghcr.io/<github_user>/<package_name>:devel R
+```
+
+``` r
+library(reticulate)
+py_config()          # already points at the book's environment
+```
+
+To execute `python` in a book page, open the page with an `R` chunk calling
+`BiocBook::setup_python()` and write ```` ```{python} ```` chunks after it. Keep
+at least one `R` chunk on the page: that is what keeps `quarto` on the `knitr`
+engine, and therefore on `reticulate`, rather than on `jupyter`.
+
 
 # Session info {-}
 
