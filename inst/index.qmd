@@ -66,8 +66,8 @@ The initiated RStudio Server instance will be available at
 
 # `python` support {-}
 
-The `Docker` image ships a `conda` environment called `BiocBook`, holding
-everything listed in `inst/requirements.yml`. It is created at build time by
+The `Docker` image ships the book's `conda` environment, holding everything
+listed in `inst/requirements.yml`. It is created at build time by
 `BiocBook::setup_python()`, which fetches a pinned `micromamba` if the machine
 has no `conda` at all.
 

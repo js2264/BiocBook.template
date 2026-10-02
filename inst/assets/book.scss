@@ -42,7 +42,7 @@ div.callout-answer.callout-style-default>.callout-header {
   display: unset !important;
 }
 
-div.callout-answer.icon.callout-captioned .callout-icon::before {
+div.callout-answer.icon.callout-titled .callout-icon::before {
   background-image: $icon;
 }
 
