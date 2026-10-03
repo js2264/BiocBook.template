@@ -21,3 +21,6 @@ dependencies:
     ## add the python packages your book imports, pinned, e.g.:
     # - numpy=1.26
     # - matplotlib=3.8
+    ## On the Bioconductor images, matplotlib >= 3.11 fails to import: it needs
+    ## a more recent harfbuzz than the one R has already loaded. If a package
+    ## you import uses it, pin it below 3.11, e.g. `- matplotlib-base=3.10`
