@@ -10,6 +10,14 @@
 ## Anaconda Terms of Service, which require a paid licence for many
 ## organisations; conda-forge and bioconda are not. List conda-forge before
 ## bioconda, as bioconda requires.
+##
+## Declare the python packages your book imports under `pip:`, so that they
+## come from PyPI (BiocBook >= 1.11.5). python chunks run inside the R
+## session, and conda builds of these packages link libraries R may already
+## have loaded, in an older version: on the Bioconductor builders, h5py and
+## matplotlib >= 3.11 then fail to import. PyPI wheels carry their own. Keep
+## conda for python itself and for command-line tools. See
+## `?BiocBook::BiocBook-python`.
 name:
     <Package_name>
 channels:
@@ -18,9 +26,9 @@ channels:
     - nodefaults
 dependencies:
     - python=3.12
-    ## add the python packages your book imports, pinned, e.g.:
-    # - numpy=1.26
-    # - matplotlib=3.8
-    ## On the Bioconductor images, matplotlib >= 3.11 fails to import: it needs
-    ## a more recent harfbuzz than the one R has already loaded. If a package
-    ## you import uses it, pin it below 3.11, e.g. `- matplotlib-base=3.10`
+    ## add the command-line tools your book runs, pinned, e.g.:
+    # - samtools=1.24
+    ## and the python packages it imports, pinned, e.g.:
+    # - pip:
+    #     - numpy==2.5.4
+    #     - matplotlib==3.11.2
